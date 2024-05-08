@@ -51,10 +51,11 @@ img {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: #3f3f3f;
+  /* background-color: #3f3f3f; */
   padding: 15px;
   border-radius: 10px;
   text-align: center;
+  border: 0.1rem solid rgba(255, 255, 255, 0.315);
 }
 
 .texto,
