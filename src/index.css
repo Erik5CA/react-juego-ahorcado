@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+  /* height: 100vh; */
+}
+
+#root {
+  max-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.ganador,
+.perdedor,
+.juego {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #3f3f3f;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.texto,
+.pregunta {
+  background: linear-gradient(rgba(94, 138, 243, 1) 15%, rgba(243, 61, 223, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+}
+
+.pregunta {
+  font-size: 1.4em;
+  text-align: center;
+  background-color: #3f3f3f;
+  padding: 0 15px;
+  border-radius: 7px;
+}
+
+.imagen {
+  width: 160px;
+  margin: 0 auto;
+}
+.palabra {
+  display: flex;
+}
+
+.palo {
+  margin: 3px;
+  border-bottom: 1px solid white;
+  width: 32px;
+  height: 45px;
+  text-align: center;
+  font-size: 2em;
+  /* background-color: aliceblue; */
+  /* padding: -10px 0; */
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+  /* margin: 20px 0;s */
+}
+
+.botones button {
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+  /* background: linear-gradient(to bottom, #48ce20 5%, #75ca24 100%); */
+  /* background: linear-gradient(to bottom, #ce3420 5%, #ca2424 100%); */
+  background-color: #eae0c2;
+  border-radius: 8px;
+  border: 2px solid #333029;
+  display: inline-block;
+  cursor: pointer;
+  color: #505739;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 0;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  width: 35px;
+  text-align: center;
+}
+
+.botones button:hover {
+  background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+  background-color: #ccc2a6;
+}
+.botones button:active {
+  position: relative;
+  top: 1px;
+}
+
+.boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+  background-image: radial-gradient(
+    circle at 100% 0%,
+    rgba(94, 138, 243, 1) 15%,
+    rgba(243, 61, 223, 1)
+  );
+}
+
+.boton:hover {
+  opacity: 0.8;
+  color: white;
+}
+
+@media screen and (width > 500px) {
+  .pregunta {
+    font-size: 1.8em;
+  }
+}
